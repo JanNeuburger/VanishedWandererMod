@@ -2,6 +2,7 @@ package at.boolejan.whitewyvern.util;
 
 import at.boolejan.whitewyvern.WhiteWyvern;
 import at.boolejan.whitewyvern.blocks.RakanionBlock;
+import at.boolejan.whitewyvern.items.RakanionBlockItem;
 import at.boolejan.whitewyvern.items.RakanionShard;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -29,6 +30,6 @@ public class RegistryHandler {
     // endregion Blocks
 
     // region BlockItems
-
+    public static final RegistryObject<Item> RAKANION_BLOCK_ITEM = ITEMS.register("rakanion_block", () -> new RakanionBlockItem(RAKANION_BLOCK.get()));
     // endregion BlockItems
 }
